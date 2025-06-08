@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: maroon;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: green;
+}
+
+#answer {
+    border: 3px solid blueviolet;
+    width: 30vw;
+    color: white;
+    margin: 2rem auto;
+    border-radius: 6px;
+}
+
+.button3 {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+    margin: 2rem auto;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    color: purple;
+    animation: bounce 3s ease;
+}
+
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+
+.Multiplication,
+.Addition,
+.subtraction {
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto;
+}
+
+input {
+    padding-left: 1em;
+    border-radius: 5px;
+}
