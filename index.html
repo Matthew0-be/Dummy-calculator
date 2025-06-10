@@ -5,39 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
+    <header class="animate__animated animate__fadeIn" style="animation-duration: 20s;">
         <h2>Calculator</h2>
         <div id="answer">0</div>
         <div class="button3">
-            <button onclick="multiply()"><img src="/image/multiplty.png" alt="" width="20"></button>
-            <button onclick="Addition()"><img src="/image/addition sign.png" alt="" width="20"></button>
-            <button onclick="subtraction()"><img src="/image/subtraction.png" alt="" width="20"></button>
+            <button onclick="multiply()" style="background-color: gold;"><img src="/image/multiplty.png" alt="" width="20"></button>
+            <button onclick="Addition()" style="background-color: darkolivegreen;"><img src="/image/addition sign.png" alt="" width="20"></button>
+            <button onclick="subtraction()" style="background-color: plum"><img src="/image/subtraction.png" alt="" width="20"></button>
         </div>
-
+    
         <div class="Multiplication">
-            <input type="number" placeholder="First Number" id="numberOne" value="22">
-            <span><img src="/image/multiplty.png" alt="" width="10" ></span>
-            <input type="number" placeholder="Second Number" id="numberTwo" value="22">
+            <input type="number" placeholder="First Number" id="numberOne" value="">
+            <input type="number" placeholder="Second Number" id="numberTwo" value="">
         </div>
-
-        <div class="Addition">
-            <input type="number" placeholder="Third Number" id="numberThree" value="30">
+    
+        <!-- <div class="Addition">
+            <input type="number" placeholder="First Number" id="numberOne" value="">
             <span style=""><img src="/image/addition sign_calculator_math_icon.png" alt="" width="10"></span>
-            <input type="number" placeholder="Fourth Number" id="numberFour" value="30">
+            <input type="number" placeholder="Second Number" id="numberTwo" value="">
         </div>
-
+    
         <div class="subtraction">
-            <input type="number" placeholder="Fifth Number" id="numberFive" value="30">
+            <input type="number" placeholder="First Number" id="numberOne" value="">
             <span><img src="/image/subtraction.png" alt="" width="10"></span>
-            <input type="number" placeholder="Sixth Number" id="numberSix" value="30">
-        </div>
+            <input type="number" placeholder="Second Number" id="numberTwo" value="">
+        </div> -->
     </header>
 </body>
 <script src="script.js"></script>
-
 </html>
+
+
+
+

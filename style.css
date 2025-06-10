@@ -4,64 +4,138 @@
     box-sizing: border-box;
 }
 
-header {
-    background-color: maroon;
+body {
+    background-color: #0d0d0d; /* near-black for depth */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f0f0f0;
 }
 
+/* HEADER */
+header {
+    background: linear-gradient(rgba(106, 13, 173, 1), rgb(255, 20, 147, 1)); /* purple-pink neon blend */
+    width: 90%;
+    max-width: 500px;
+    border-radius: 20px;
+    padding: 2em;
+    margin: 5em auto;
+    box-shadow: 0 0 30px rgba(255, 20, 147, 0.5); /* neon glow */
+    border: 2px solid #ff00ff;
+}
+
+/* HEADING Text*/
 h2 {
     text-align: center;
     text-transform: uppercase;
-    color: green;
+    color: #00ffea; /* glowing cyan */
+    font-size: 2rem;
+    text-shadow: 0 0 10px #00ffff;
 }
 
-#answer {
-    border: 3px solid blueviolet;
-    width: 30vw;
-    color: white;
-    margin: 2rem auto;
-    border-radius: 6px;
-}
-
-.button3 {
-    display: flex;
-    justify-content: center;
-    gap: 2em;
-    flex-wrap: wrap;
-    margin: 2rem auto;
-}
-
-button {
-    cursor: pointer;
-}
-
-button:hover {
-    color: purple;
-    animation: bounce 3s ease;
-}
-
-
-@keyframes bounce {
-
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-20px);
-    }
-}
-
-
+/* INPUT Buttons */
 .Multiplication,
 .Addition,
 .subtraction {
     display: flex;
     justify-content: center;
     margin: 1rem auto;
+    flex-wrap: wrap;
 }
 
+/* INPUT */
 input {
-    padding-left: 1em;
-    border-radius: 5px;
+    padding: 0.6em 1em;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 100%;
+    max-width: 220px;
+    margin: 0.5rem;
+    background-color: #1f003b;
+    color: #00ffea;
+    accent-color: #ff00ff;
+    /* border: 2px solid #ff00ff; */
+    box-shadow: 0 0 15px #ff00ff;
+}
+
+/* ANSWER */
+#answer {
+    border: 3px solid #ff6ec7;
+    /* background-color: #0a0033; */
+    color: #ffffff;
+    width: 80%;
+    max-width: 320px;
+    margin: 2em auto;
+    padding: 1em;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 20px #ff00ff;
+}
+
+/* BUTTON DIV */
+.button3 {
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    flex-wrap: wrap;
+    margin: 2rem auto;
+}
+
+/* BUTTONS */
+button {
+    cursor: pointer;
+    padding: 0.7em 1.5em;
+    font-size: 1rem;
+    border: 2px solid #00ffea;
+    background: transparent;
+    color: #00ffea;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px #00ffea;
+}
+
+button:hover {
+    background-color: #00ffea;
+    color: #0d0d0d;
+    transform: scale(1.05);
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+    header {
+        padding: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    input,
+    #answer {
+        width: 90%;
+    }
+
+    .button3 {
+        gap: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 1em;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    input,
+    #answer {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 0.5em 1em;
+    }
 }

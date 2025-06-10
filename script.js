@@ -1,3 +1,4 @@
+
 function multiply() {
     const FirstNumber = numberOne.value;
     const SecondNumber = numberTwo.value;
@@ -7,17 +8,17 @@ function multiply() {
 }
 
 function Addition() {
-    const ThirdNumber = Number(numberThree.value);
-    const FourthNumber = Number(numberFour.value);
-    const sum = ThirdNumber + FourthNumber;
+    const FirstNumber = Number(numberOne.value);
+    const SecondNumber = Number(numberTwo.value);
+    const sum = FirstNumber + SecondNumber;
     console.log(sum);
     answer.innerHTML = sum;
 }
 
 function subtraction() {
-    const FifthNumber = numberFive.value;
-    const SixthNumber = numberSix.value;
-    const minus = FifthNumber - SixthNumber;
+    const FirstNumber = numberOne.value;
+    const SecondNumber = numberTwo.value;
+    const minus = FirstNumber - SecondNumber;
     console.log(minus);
     answer.innerHTML = minus;
 }
